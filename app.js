@@ -50,7 +50,6 @@ app.get("/posts/:title", (req, res) => {
 
   posts.forEach(element => {
     const savedPosts = _.lowerCase(element.title);
-    console.log(param, savedPosts);
 
     if (param == savedPosts) {
       console.log("found");
