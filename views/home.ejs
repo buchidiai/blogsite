@@ -6,10 +6,6 @@
 <% posts.forEach(post => { %>
 <h1><%= post.title%></h1>
 
-<p>
-  <%= post.body.slice(0, 100)+'... ' %><a href="/posts/<%= post.title %>"
-    >Read More</a
-  >
-</p>
+<p><%= post.body+'... ' %><a href="/posts/<%= post._id %>">Read More</a></p>
 
 <%}); %> <%- include('partials/footer.ejs') -%>
